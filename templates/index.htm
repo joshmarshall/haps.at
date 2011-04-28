@@ -1,0 +1,47 @@
+{% extends base.htm %}
+
+{% block title %}Congratulations!{% end block %}
+
+{% block body %}
+
+<div class="search-container">
+<h2>Search the Haps, Yo</h2>
+<div class="search">
+	<input type="text" id="search" name="search" value="e.g. Austin, TX"/>
+	<button id="search-button">Search</button>
+	{{ xsrf_form_html() }}
+</div>
+</div>
+<div class="separator"></div>
+
+<div class="body">
+	<button id="search-toggle" class="hide">Hide Search</button>
+
+
+	<div class="columns">
+
+		<ul class="column" id="twitter">
+			<li class="column-title">Tweets</li>
+			<li class="no-results">(no results)</li>
+		</ul>
+
+		<ul class="column" id="flickr">
+			<li class="column-title">Photos</li>
+			<li class="no-results">(no results)</li>
+		</ul>
+
+		<ul class="column" id="lastfm">
+			<li class="column-title">Music</li>
+			<li class="no-results">(no results)</li>
+		</ul>
+
+		<ul class="column" id="yelp">
+			<li class="column-title">Food</li>
+			<li class="no-results">(no results)</li>
+		</ul>
+
+	</div>
+
+</div>
+
+{% end block %}

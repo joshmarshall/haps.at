@@ -1,0 +1,180 @@
+body {
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+	background: #DDD;
+	color: #AAA;
+	font-family: "Lucida Grande", "Verdana", "sans-serif";
+}
+
+.separator {
+	margin: 0;
+	border-top: 1px solid #BBB;
+	height: 0;
+	border-bottom: 1px solid #FFF;
+}
+
+.header {
+	margin: 0;
+	padding: 12px 10px 10px 12px;
+	height: 30px;
+	overflow: hidden;
+	background: #FFF;
+}
+
+
+h1,h2,h3,h4,.column-title {
+	font-family: 'Ubuntu', 'Lucida Grande', 'sans-serif';
+}
+
+h1 {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	padding: 30px 0 0 90px;
+	background: url("/static/images/haps_logo_small.png") top left no-repeat;
+	margin: 0;
+}
+
+#place {
+	text-align: center;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	color: #444;
+	text-shadow: 0 1px 1px #AAA;
+	font-family: 'Ubuntu', 'Lucida Grande', 'sans-serif';
+	font-size: 20px;
+	padding: 0;
+	margin: 12px 0 10px -10px;
+	line-height: 24px;
+	height: 30px;
+}
+
+.search-container {
+	overflow: auto;
+	text-align: center;
+	background: #CCC url("/static/images/search_drop_shadow.png") top left repeat-x;
+	padding: 30px;
+}
+
+	.search-container h2 {
+		margin: 0 0 20px;
+		padding: 0;
+		color: #FFF;
+		text-shadow: 0 1px 1px #888;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.search-container input#search {
+		border-radius: 6px;
+		border: none;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 4px 7px;
+		margin: 0;
+		display: inline-block;
+		width: 200px;
+	}
+
+	.search-container input.tip#search {
+		color: #DDD;
+	}
+
+	.search-container button#search-button {
+		border: none;
+		outline: none;
+		font-size: 14px;
+		background: #777;
+		line-height: 20px;
+		padding: 4px 20px;
+		border-radius: 6px;
+		font-weight: bold;
+		font-family: 'Ubuntu', 'Lucida Grande', 'sans-serif';
+		display: inline-block;
+		margin: 0 0 0 5px;
+		color: #FFF;
+		text-shadow: 0 1px 1px #333;
+		cursor: pointer;
+	}
+
+	.search-container button#search-button:hover {
+		background-color: #888;
+	}
+
+p {
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+#search-toggle {
+	overflow: hidden;
+	display: block;
+	width: 150px;
+	font-size: 12px;
+	font-family: 'Ubuntu', 'Lucida Grande', 'sans-serif';
+	color: #AAA;
+	text-transform: lowercase;
+	font-weight: bold;
+	background: #CCC;
+	border: 0;
+	outline: 0;
+	line-height: 20px;
+	margin: 0 auto 20px;
+	padding: 4px 0;
+	text-align: center;
+	border-radius: 0 0 10px 10px / 0 0 10px 10px;
+	cursor: pointer;
+}
+
+.body {
+	margin: 0 0 60px;
+}
+
+.columns {
+	display: block;
+	width: 1000px;
+	overflow: hidden;
+	margin: 0 auto;
+	background: url("/static/images/columns_bg.png") top left repeat-y;
+}
+
+ul.column {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 250px;
+	min-height: 250px;
+}
+
+	.column-title {
+		font-weight: bold;
+		color: #FFF;
+		text-shadow: 0 1px #AAA;
+		text-align: center;
+		font-size: 20px;
+	}
+
+
+	.column li.no-results {
+		text-align: center;
+		color: #BBB;
+		padding-top: 90px;
+	}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #AAA url("/static/images/search_drop_shadow.png") top left repeat-x;
+	color: #FFF;
+	font-size: 12px;
+	line-height: 20px;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+}
